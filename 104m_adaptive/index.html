@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>104m_adaptive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <!--{{ ya_code }}-->
+    <!--{{ ga_code }}-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="registration-form-wrapper">
+        <button class="close"></button>
+        <div class="registration-form">
+            <div class="registration-form-header">
+                <h1>Регистрируйтесь бесплатно</h1>
+                <p>Знакомьтесь с теми, кто <br> вам понравился</p>
+            </div>
+            <form method="post" action="">
+                <div class="gender-block">
+                    <span class="gender-advice">Выберите, кто вы:</span>
+                    <select name="gender" id="gender">
+                        <option value selected disabled></option>
+                        <option value="m">Мужчина</option>
+                        <option value="f">Женщина</option>
+                    </select>
+                    <span class="gender-error">Укажите ваш пол</span>
+                </div>
+                <div class="username-block">
+                    <span class="username-advice">Укажите ваше имя:</span>
+                    <input id="username" type="text">
+                    <span class="username-error">Укажите ваше имя</span>
+                </div>
+                <div class="bday-block">
+                    <span class="bday-advice">Укажите свою дату рождения: </span>
+                    <div class="bday-wrapper">
+                    <select name="bday" id="bday">
+                        <option value selected disabled>ДД</option>
+                    </select>
+                    <select name="bmonth" id="bmonth">
+                        <option value selected disabled>МММ</option>
+                    </select>
+                    <select name="byear" id="byear">
+                        <option value selected disabled>ГГГГ</option>
+                    </select>
+                    </div>
+                    <span class="bday-error">Пожалуйста, укажите свою дату</span>
+                </div>
+                <div class="password-block">
+                    <span class="password-advice">Придумайте новый пароль:</span>
+                    <input id="password" type="text">
+                    <span class="password-error">Пароль должен содержать минимум 8 символов</span>
+                </div>
+                <div class="email-block">
+                    <span class="email-advice">Укажите свой email:</span>
+                    <input id="email" type="email">
+                    <span class="email-error">Такой e-mail уже зарегистрирован на сайте. Войти? Или попробуйте другой e-mail</span>
+                </div>
+                <input class="next" type="submit" value="Продолжить">
+            </form>
+        </div>
+    </div>
+    <div class="wrapper-for-content">
+        <header>
+            <div class="container-desktop">
+                <div class="logo"><a href="#"><img src="" alt="logo"></a></div>
+                <div class="registration">
+                    Уже зарегистрированы? <a href="#">Войти</a>
+                </div>
+            </div>
+        </header>
+        <main class="container-desktop">
+            <div class="photos-wrapper">
+                <div class="photos">
+                    <img class="container" src="images/11@3x.jpg" alt="bae">
+                    <div class="photos-buttons container">
+                        <button class="star-icon"></button>
+                        <button class="message-icon"></button>
+                        <button class="photo-icon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="photos-description container">
+                    <span class="name">dianchik</span>
+                    <span class="name-info">35, Москва</span>
+                </div>
+                <div class="buttons container">
+                    <div class="like-wrapper">
+                        <button class="like"></button>
+                        <span class="buttons-text">Нравится</span>
+                    </div>
+                    <div class="dislike-wrapper">
+                        <button class="dislike"></button>
+                        <span class="buttons-text">Пропустить</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container-desktop">
+            <div class="liked-photos-wrapper">
+                <div class="liked-photos"><img src="" alt=""></div>
+                <div class="liked-photos"><img src="" alt=""></div>
+                <div class="liked-photos"><img src="" alt=""></div>
+                <div class="liked-photos"><img src="" alt=""></div>
+                <div class="liked-photos"><img src="" alt=""></div>
+            </div>
+            <div class="liked">
+                <img src="images/shape.svg" alt="Arrow">
+                <span>Мне<br>Понравились
+                </span>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

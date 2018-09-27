@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #eaeaea;
+    display: table;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+.wrapper-for-content {
+    display: table-row;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container {
+    width: 56%; /*180px*/
+}
+
+header {
+    height: 38px;
+    width: 100%;
+    background-color: #d0021b;
+    padding: 0 14px 0 13px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+header .container-desktop {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+header .registration {
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 300;
+    letter-spacing: .3px;
+}
+.registration a {
+    color: inherit;
+}
+
+.photos-wrapper {
+    margin: 11px 0 0; /*margin: 11px 0 10px;*/
+    font-size: 0;
+
+}
+.photos {
+    margin: 0 auto;
+    padding-bottom: 17px;
+    text-align: center;
+    position: relative;
+}
+
+.photos-buttons {
+    margin-bottom: 18px;
+    padding: 0 25px;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.photos-buttons button {
+    width: 42px;
+    height: 42px;
+    background-size: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+}
+.star-icon {
+    background: url("../images/star.svg") no-repeat center;
+}
+.star-icon:hover {
+    background: url("../images/star-hover.svg") no-repeat center;
+    background-size: 100%;
+}
+.message-icon {
+    background: url("../images/message.svg") no-repeat center;
+}
+.message-icon:hover {
+    background: url("../images/message-hover.svg") no-repeat center;
+    background-size: 100%;
+}
+.photo-icon {
+    background: url("../images/photo.svg") no-repeat center;
+}
+.photo-icon:hover {
+    background: url("../images/photo-hover.svg") no-repeat center;
+    background-size: 100%;
+}
+
+.photos-description {
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    font-size: 11px;
+    font-weight: 600;
+    color: #f2244e;
+}
+.name-info {
+    font-size: 9px;
+    font-weight: 300;
+    color: #535353;
+}
+
+.buttons {
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.like-wrapper, .dislike-wrapper {
+    text-align: center;
+}
+.like {
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 80px;
+    background: url("../images/like.svg") no-repeat center;
+    background-size: 100%;
+    outline: none;
+    border: 0;
+}
+.like:hover {
+    background: url("../images/like-hover.svg") no-repeat center;
+    background-size: 100%;
+}
+.dislike {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    width: 80px;
+    height: 80px;
+    background: url("../images/x.svg") no-repeat center;
+    background-size: 100%;
+    outline: none;
+    border: 0;
+}
+.dislike:hover {
+    background: url("../images/x-hover.svg") no-repeat center;
+    background-size: 100%;
+}
+
+.buttons-text {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    padding: 0 13px 0 20px;
+    width: 100%;
+    height: 63px;
+    background-color: rgba(0, 0, 0, 0.64);
+}
+
+footer .container-desktop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.liked-photos-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liked-photos {
+    width: 24px;
+    height: 24px;
+    background-color: #d8d8d8;
+}
+
+.liked {
+    width: 50%;
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.liked img {
+    margin-left: 5px;
+}
+
+.registration-form-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+}
+.close {
+    width: 22px;
+    height: 22px;
+    background: url("../images/close.svg") no-repeat;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.registration-form {
+    padding-bottom: 1%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 93%;
+    border-radius: 5px;
+    background-color: #d0021b;
+}
+
+.registration-form-header {
+    padding: 5px 0 9px;
+    color: #fff;
+    text-align: center;
+}
+.registration-form-header h1 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 5px;
+    
+}
+.registration-form-header p {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: .3px;
+}
+
+.registration-form form {
+    width: 98%;
+    margin: 0 auto;
+    padding: 5px 25px 20px;
+    background-color: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+}
+
+.gender-block, .username-block, .bday-block, .password-block, .email-block {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.gender-advice, .username-advice, .bday-advice, .password-advice, .email-advice {
+    display: block;
+    font-size: 9px;
+    font-weight: 300;
+}
+#gender, #username, #password, #email {
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    outline: none;
+    background-color: #fff;
+    text-align: center;
+}
+#gender option {
+
+}
+.gender-error, .username-error, .bday-error, .password-error, .email-error {
+    display: block;
+    font-weight: 300;
+    font-size: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d0021b;
+    display: none;
+}
+
+.bday-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.bday-block select {
+    height: 30px;
+    border-radius: 2px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    outline: none;
+    background-color: #fff;
+    font-size: 9px;
+    color: grey;
+}
+
+.bday-block option {
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#bday {
+    width: 22%;
+}
+#bmonth {
+    width: 43%;
+}
+#byear {
+    width: 30%;
+}
+#password {
+
+}
+.password-error {
+    width: 90%;
+    text-align: center;
+}
+.email-block {
+    padding-bottom: 20px;
+}
+.email-error {
+    width: 92%;
+    text-align: center;
+}
+
+.next {
+    margin: 0 auto;
+    width: 170px;
+    height: 40px;
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom, #b3e16f, #72a83a);
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+}
+
+@media screen and (min-width: 375px) {
+
+    .container {
+        width: 59%; /*224px*/
+    }
+
+    header {
+        height: 44px;
+        padding: 0 16px 0 15px;
+        font-size: 11px;
+    }
+
+    .photos-wrapper {
+        margin: 25px 0 0; /*margin: 25px 0 17px;*/
+    }
+    .photos-buttons {
+        padding: 0 34px;
+    }
+    .photos-buttons button {
+        width: 50px;
+        height: 50px;
+    }
+    .photos-description {
+        margin-bottom: 17px;
+    }
+    .name, .name-info {
+        font-size: 13px;
+    }
+
+    .like, .dislike {
+        width: 92px;
+        height: 92px;
+        background-size: 100%;
+    }
+    .buttons-text {
+        font-size: 14px;
+    }
+    footer {
+        padding: 0 15px 0 23px;
+        height: 74px;
+    }
+    .liked {
+        font-size: 13px;
+    }
+    .liked img {
+        margin-left: 10px;
+    }
+    .liked-photos {
+        width: 28px;
+        height: 28px;
+    }
+
+    .registration-form-header {
+        padding: 5px 0 13px;
+    }
+    .registration-form-header h1 {
+        font-size: 18px;
+    }
+
+    .registration-form-header p {
+        font-size: 14px;
+    }
+    .gender-block, .username-block, .bday-block, .password-block, .email-block {
+        padding-bottom: 13px;
+    }
+
+    .gender-advice, .username-advice, .bday-advice, .password-advice, .email-advice {
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    #gender, #username, #password, #email, .bday-block select {
+        height: 34px;
+    }
+
+    .gender-error, .username-error, .bday-error, .password-error, .email-error {
+        font-size: 9px;
+    }
+    .email-block {
+        padding-bottom: 26px;
+    }
+
+    .password-error {
+    }
+
+    .registration-form form {
+        padding: 5px 25px 25px;
+    }
+    .next {
+        width: 201px;
+        height: 46px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .container {
+        width: 59%; /*254px*/
+    }
+
+    header {
+        height: 51px;
+        padding: 0 19px 0 18px;
+        font-size: 12px;
+    }
+    .photos-wrapper {
+        margin: 30px 0 0; /*margin: 15px 0 14px;*/
+    }
+    .photos-buttons button {
+        width: 56px;
+        height: 56px;
+    }
+    .photos-description {
+        margin-bottom: 14px;
+    }
+
+    .photos {
+        padding-bottom: 20px;
+    }
+    .name, .name-info {
+        font-size: 14px;
+    }
+
+    .like, .dislike {
+        width: 106px;
+        height: 106px;
+    }
+    .buttons-text {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 0 18px 0 27px;
+        height: 84px;
+    }
+    .liked {
+        font-size: 14px;
+    }
+    .liked img {
+        width: 52px;
+        margin-left: 20px;
+    }
+
+    .liked-photos {
+        width: 32px;
+        height: 32px;
+    }
+
+    .registration-form-header {
+        padding: 12px 0 20px;
+    }
+
+    .registration-form-header h1 {
+        font-size: 20px;
+    }
+
+    .registration-form-header p {
+        font-size: 11px;
+    }
+
+    .registration-form form {
+        padding: 6px 32px 25px;
+    }
+
+
+    .gender-advice, .username-advice, .bday-advice, .password-advice, .email-advice {
+        font-size: 9px;
+        margin-bottom: 6px;
+    }
+
+
+    #gender, #username, #password, #email, .bday-block select {
+        height: 40px;
+    }
+
+    .next {
+        width: 226px;
+        height: 53px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 480px) {
+
+
+    .container {
+        width: 300px;
+    }
+    header {
+        font-size: 13px;
+    }
+    .photos-buttons {
+        padding: 0 50px;
+    }
+    .name, .name-info {
+        font-size: 15px;
+    }
+    .buttons-text {
+        font-size: 17px;
+    }
+    footer {
+        /*justify- content: center;*/
+    }
+    footer .container-desktop {
+        justify-content: center;
+
+    }
+
+    .liked-photos-wrapper {
+        width: 190px;
+    }
+
+    .liked {
+        width: 200px;
+        justify-content: left;
+        font-size: 15px;
+    }
+    .liked img {
+        margin-right: 10px;
+    }
+
+    .registration-form {
+        max-width: 400px;
+        padding-bottom: 4px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 720px) {
+
+    .container {
+        width: 320px;
+    }
+    header {
+        font-size: 14px;
+    }
+    .photos-buttons button {
+        width: 60px;
+        height: 60px;
+    }
+    .name, .name-info {
+        font-size: 16px;
+    }
+    .buttons-text {
+        font-size: 18px;
+    }
+    .liked {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 400px;
+    }
+
+    header {
+        font-size: 16px;
+    }
+    .container-desktop {
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    main {
+        padding: 30px 0 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photos-wrapper {
+        margin-top: 0;
+    }
+    .photos {
+        padding: 0;
+    }
+
+    .photos-buttons {
+        padding: 0 75px;
+    }
+
+    .photos-buttons button {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .right-column {
+        padding-top: 30px;
+    }
+    .right-column .container {
+        width: 420px;
+    }
+
+    .photos-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+    .name-info {
+        font-size: 30px;
+    }
+
+    .buttons {
+        justify-content: space-between;
+    }
+    .like, .dislike {
+        height: 190px;
+        width: 190px;
+    }
+    .buttons-text {
+        font-size: 28px;
+    }
+    footer {
+        padding-right: 0;
+    }
+    footer .container-desktop {
+        justify-content: flex-end;
+    }
+}

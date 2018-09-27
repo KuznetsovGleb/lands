@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+    <defs>
+        <circle id="b" cx="19" cy="19" r="19"/>
+        <filter id="a" width="121.1%" height="121.1%" x="-10.5%" y="-5.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.153872283 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <g transform="translate(10 8)">
+            <path fill="#D0021B" fill-rule="nonzero" d="M17.406 3.065h-.744a.35.35 0 0 1-.227-.097L14.105.774C13.783.484 13.363.29 12.91.29H9.156c-.453 0-.874.162-1.197.484l-2.33 2.194a.294.294 0 0 1-.226.097h-.744c-2.459 0-4.465 2-4.465 4.451v8.065a4.122 4.122 0 0 0 4.141 4.129H17.73a4.122 4.122 0 0 0 4.142-4.13V7.517c-.033-2.451-2.039-4.451-4.465-4.451zM11 17.097c-3.3 0-5.985-2.678-5.985-5.968S7.7 5.161 11 5.161c3.3 0 5.985 2.678 5.985 5.968S14.3 17.097 11 17.097z"/>
+            <ellipse cx="11" cy="11.129" fill="#D0021B" rx="3.721" ry="3.71"/>
+        </g>
+    </g>
+</svg>
