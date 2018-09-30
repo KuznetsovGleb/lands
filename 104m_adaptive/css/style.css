@@ -396,6 +396,16 @@ footer .container-desktop {
     width: 24px;
     height: 24px;
     background-color: #d8d8d8;
+    overflow: hidden;
+    /*display: none;*/
+    /*visibility: hidden;*/
+}
+.liked-photos img {
+    width: 110%;
+    margin-left: -1px;
+    margin-top: -1px;
+    /*height: 100%;*/
+    font-size: 6px;
 }
 
 .liked {

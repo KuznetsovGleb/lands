@@ -28,19 +28,35 @@ $(function () {
     });
 
 
+    var i = 4;
+    var count = 0;
+    if (i < 0) {
+        i = 4;
+    }
 
     var $buttonNext = $('.like, .dislike');
     var $image = $('.image-wrapper');
     var $firstImage = $('.first-image');
 
-    $buttonNext.on("click", function () {
+    $buttonNext.on("click", function (e) {
+
+
+
 
         var $photoInfo = $('.photos-description');
         var $currentPartner = $('.current-partner');
+        var $currentPartnerImage = $currentPartner.children();
         var $activePhotoInfo = $('.active-description');
 
-        var $lastImage = $('.last-image');
+        var $footerImageBlock = $('.liked-photos');
 
+        console.log('before',i);
+        $footerImageBlock.eq(i).children().attr("src", $currentPartnerImage.attr("src"));
+        i--;
+
+
+
+        var $lastImage = $('.last-image');
 
         if($currentPartner.hasClass('last-image')) {
 
@@ -66,16 +82,23 @@ $(function () {
             $currentPartner.prev().addClass("current-partner");
             $currentPartner.removeClass("current-partner");
         }
-
-
-
         $activePhotoInfo.removeClass("active-description");
         $activePhotoInfo.prev().removeClass("active-description");
         $activePhotoInfo.next().addClass("active-description");
 
+        // console.log('target == this', e.target==this);
+
+
+
+        if (count >= 5) {
+            $regFormWrap.show();
+        }
+        count++;
+
+        // console.log('$(e.target)==$(this)', $(e.target)==$(this), $(e.target), $(this));
+        // console.log('e.target==this', e.target==this);
 
     });
-
 
 
 
