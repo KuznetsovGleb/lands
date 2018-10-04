@@ -1,5 +1,12 @@
+$(window).load(function() {
+      setTimeout(function () { 
+    $(".preloader").delay().fadeOut('slow').remove();   
+  }, 2000);  
+});
 $(function () {
     
+
+
     var $closeReg = $('.close');
     var $regFormWrap = $('.registration-form-wrapper');
     var $regForm = $('.registration-form')
