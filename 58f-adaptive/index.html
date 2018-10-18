@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="" alt="logo"></div>
+            <div class="registration-question">
+                <span>Уже зарегистрированы?</span>
+                <a class="enter" href="/sign/in">Войти</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper-bg">
+            <div class="block-1 question-block js-question-block active" data-step="1">
+                <div class="question-header">
+                    <span>Место знакомств для тех,<br class="desktop_none"> кто ищет отношения</span>
+                </div>
+                <div class="question-main">
+                    <div class="question-gif">
+                        <img src="images/wink.gif" alt="wink">
+                    </div>
+                    <div class="question-text">
+                        <span class="bold">Внимание!</span>
+                        <span>На этом сайте много<br class="desktop_none">интересных мужчин</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-next js-button-next">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-2 question-block js-question-block" data-step="2">
+                <div class="question-header">
+                    <span>Важно</span>
+                </div>
+                <div class="question-main">
+                    <div class="question-text">
+                        <span>Перед тем как мы покажем Вам анкеты этих мужчин, которые ищут себе женщину, ответьте на несколько простых вопросов.</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-next js-button-next">ОК</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-3 question-block progress-block js-question-block" data-step="3">
+                <div class="question-header">
+                    <ul class="progress-bar">
+                        <li>Вопрос</li>
+                        <li class="question-number active-question"></li>
+                        <li class="question-number"></li>
+                        <li class="question-number"></li>
+                        <li class="question-number"></li>
+                    </ul>
+                </div>
+                <div class="question-main">
+                    <div class="question-text">
+                        <span>На этом сайте могут быть фото мужчин, которых Вы можете знать. Вы согласны оставить их личности <br class="desktop_none">в секрете?</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-yes js-button-next">ДА</button>
+                        <button class="buttons button-no js-button-next">НЕТ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-4 question-block progress-block js-question-block" data-step="4">
+                <div class="question-header">
+                    <ul class="progress-bar">
+                        <li>Вопрос</li>
+                        <li class="question-number"></li>
+                        <li class="question-number active-question"></li>
+                        <li class="question-number"></li>
+                        <li class="question-number"></li>
+                    </ul>
+                </div>
+                <div class="question-main">
+                    <div class="question-text">
+                        <span>Эти мужчины попросили нас регистрировать только тех женщин, которые ищут серьезные отношения. Вы ищете того же?</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-yes js-button-next">ДА</button>
+                        <button class="buttons button-no js-button-next">НЕТ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-5 question-block progress-block js-question-block" data-step="5">
+                <div class="question-header">
+                    <ul class="progress-bar">
+                        <li>Вопрос</li>
+                        <li class="question-number"></li>
+                        <li class="question-number"></li>
+                        <li class="question-number active-question"></li>
+                        <li class="question-number"></li>
+                    </ul>
+                </div>
+                <div class="question-main">
+                    <div class="question-text">
+                        <span>Вы согласны, что мужчины должны делать первый шаг?</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-yes js-button-next">ДА</button>
+                        <button class="buttons button-no js-button-next">НЕТ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-6 question-block progress-block js-question-block" data-step="6">
+                <div class="question-header">
+                    <ul class="progress-bar">
+                        <li>Вопрос</li>
+                        <li class="question-number"></li>
+                        <li class="question-number"></li>
+                        <li class="question-number"></li>
+                        <li class="question-number active-question"></li>
+                    </ul>
+                </div>
+                <div class="question-main">
+                    <div class="question-text">
+                        <span>Каждый раз, когда Вы будете заходить на свою анкету, Вам будет приходить по несколько сообщений от разных мужчин. Вы согласны с этим?</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-yes js-button-next">ДА</button>
+                        <button class="buttons button-no js-button-next">НЕТ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-7 question-block question-checkbox js-question-block js-question-checkbox" data-step="7">
+                <div class="question-header">
+                    <span>Какой тип телосложения у<br>мужчин Вы ищете?</span>
+                </div>
+                <div class="question-main">
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-advice">(Пожалуйста, выберите до 3 ответов)</div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Средние
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Атлетические
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Худощавые
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Несколько лишних кг
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Большие и красивые
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-next js-button-next">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-8 question-block question-checkbox js-question-block js-question-checkbox" data-step="8">
+                <div class="question-header">
+                    <span>Мужчин какого возраста<br>Вы ищете?</span>
+                </div>
+                <div class="question-main">
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-advice">(Пожалуйста, выберите до 3 ответов)</div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">21-25
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">25-32
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">32-37
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">37-45
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">45 и больше
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-next js-button-next">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-9 question-block question-checkbox js-question-block js-question-checkbox" data-step="9">
+                <div class="question-header">
+                    <span>Какой тип отношений<br>Вы ищете?</span>
+                </div>
+                <div class="question-main">
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-advice">(Пожалуйста, выберите до 3 ответов)</div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Общение
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Свидание
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Серьезные отношения
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Создание семьи
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-block">
+                            <label class="checkbox-label">Пока не знаю
+                                <input type="checkbox" class="js-checkbox-select">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-next js-button-next">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-10 question-block js-question-block" data-step="10">
+                <div class="question-header">
+                    <span>Спасибо</span>
+                </div>
+                <div class="question-main">
+                    <div class="question-text">
+                        <span>Теперь Вы можете посмотреть анкеты мужчин, которые ищут отношения. Пожалуйста, сохраните в секрете их личности.</span>
+                        <span class="bold">Нажмите "Продолжить", чтобы начать знакомиться.</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="buttons button-next js-button-next">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-11 question-block js-question-block" data-step="11">
+                <div class="question-header">
+                    <span>Чтобы увидеть свои совпадения,<br>заполните несколько полей</span>
+                </div>
+                <div class="question-main">
+                    <div class="form-wrapper">
+                        <form class="js-form" method="GET" action="" accept-charset="UTF-8" novalidate>
+                            <div class="form-gender-wrapper">
+                                <div class="gender-block">
+                                    <span>Я:</span>
+                                    <div class="gender-label-wrapper">
+                                        <label class="gender-radio gender-m">М
+                                            <input class="js-gender-checkbox" type="radio" name="gender" value="m">
+                                            <span class="gender-checkmark"></span>
+                                        </label>
+                                        <label class="gender-radio gender-f">Ж
+                                            <input class="js-gender-checkbox" type="radio" name="gender" value="f">
+                                            <span class="gender-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <span class="gender-advice js-gender-advice">Выбери свой пол</span>
+                                </div>
+                                <div class="search-gender-block">
+                                    <span>Ищу:</span>
+                                    <div class="gender-label-wrapper">
+                                        <label class="gender-radio gender-m">М
+                                            <input class="js-search-gender-checkbox" type="radio" name="search_gender" value="m">
+                                            <span class="gender-checkmark"></span>
+                                        </label>
+                                        <label class="gender-radio gender-f">Ж
+                                            <input class="js-search-gender-checkbox" type="radio" name="search_gender" value="f">
+                                            <span class="gender-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <span class="gender-advice js-gender-advice">Укажи искомый пол</span>
+                                </div>
+                            </div>
+                            <div class="form-username-wrapper">
+                                <span class="form-advice username-advice">Имя:</span>
+                                <input class="username form-input js-name" name="name" type="text"
+                                       placeholder="Введите ваше имя" value="" maxlength="45">
+                                <span class="username-error form-error js-username-error">Укажите Ваше имя</span>
+                                <span class="username-error form-error js-username-error">Имя должно содержать не менее 2 букв</span>
+                            </div>
+                            <div class="form-bday-wrapper">
+                                <span class="form-advice bday-advice">Моя дата рождения:</span>
+                                <div class="bday-wrapper">
+                                    <select class="bday form-input js-day js-bday" id="bday">
+                                        <option value selected disabled>День</option>
+                                        <option data-day="1">1</option>
+                                        <option data-day="2">2</option>
+                                        <option data-day="3">3</option>
+                                        <option data-day="4">4</option>
+                                        <option data-day="5">5</option>
+                                        <option data-day="6">6</option>
+                                        <option data-day="7">7</option>
+                                        <option data-day="8">8</option>
+                                        <option data-day="9">9</option>
+                                        <option data-day="10">10</option>
+                                        <option data-day="11">11</option>
+                                        <option data-day="12">12</option>
+                                        <option data-day="13">13</option>
+                                        <option data-day="14">14</option>
+                                        <option data-day="15">15</option>
+                                        <option data-day="16">16</option>
+                                        <option data-day="17">17</option>
+                                        <option data-day="18">18</option>
+                                        <option data-day="19">19</option>
+                                        <option data-day="20">20</option>
+                                        <option data-day="21">21</option>
+                                        <option data-day="22">22</option>
+                                        <option data-day="23">23</option>
+                                        <option data-day="24">24</option>
+                                        <option data-day="25">25</option>
+                                        <option data-day="26">26</option>
+                                        <option data-day="27">27</option>
+                                        <option data-day="28">28</option>
+                                        <option data-day="29">29</option>
+                                        <option data-day="30">30</option>
+                                        <option data-day="31">31</option>
+                                    </select>
+                                    <select class="bday form-input js-month js-bday" id="bmonth">
+                                        <option value selected disabled>Месяц</option>
+                                        <option data-month="1">Январь</option>
+                                        <option data-month="2">Февраль</option>
+                                        <option data-month="3">Март</option>
+                                        <option data-month="4">Апрель</option>
+                                        <option data-month="5">Май</option>
+                                        <option data-month="6">Июнь</option>
+                                        <option data-month="7">Июль</option>
+                                        <option data-month="8">Август</option>
+                                        <option data-month="9">Сентябрь</option>
+                                        <option data-month="10">Октябрь</option>
+                                        <option data-month="11">Ноябрь</option>
+                                        <option data-month="12">Декабрь</option>
+                                    </select>
+                                    <select class="bday form-input js-year js-bday" id="byear">
+                                        <option value selected disabled>Год</option>
+                                    </select>
+                                    <input id="birthday" type="hidden" name="bday" value="">
+                                </div>
+                                <span class="bday-error form-error js-bday-error">Пожалуйста, укажите свою дату</span>
+                                <span class="bday-error form-error js-bday-error">Вам должно быть больше 18</span>
+                            </div>
+                            <div class="form-email-wrapper">
+                                <div class="product-id">{{ product_id }}</div>
+                                <span class="form-advice email-advice">Email:</span>
+                                <input id="email" class="email-inp form-input js-email" name="email" type="email"
+                                       autocomplete="false" placeholder="Введите ваш email" value="">
+                                <span class="email-error form-error js-email-error">Укажите свой email</span>
+                                <span class="email-error form-error js-email-error">Введите корректный формат email</span>
+                                <span class="email-error form-error js-email-error-ajax js-email-error-type-two email-error-ajax">Ваш email не валидный. Используйте только <span
+                                        class="nowrap">буквы (a–z)</span></span>
+                                <span class="email-error form-error js-email-error-ajax js-email-error-type-zero email-error-ajax">Это точно Ваш Email? Если да, продолжайте регистрацию</span>
+                                <span class="email-error form-error js-email-error-ajax js-email-error-type-three email-error-ajax">Такой e-mail уже зарегистрирован на сайте.  <a
+                                        href="{{ project_link }}/login" target="_blank">Войти? </a>Или попробуйте другой email</span>
+                            </div>
+                            <div class="form-password-wrapper">
+                                <div class="product-id">{{ product_id }}</div>
+                                <span class="form-advice password-advice">Пароль:</span>
+                                <input class="password form-input js-password" type="password" name="password"
+                                       placeholder="Придумайте пароль" value="" maxlength="45">
+                                <span class="password-error form-error js-password-error">Пароль должен содержать минимум 8 символов</span>
+                            </div>
+                            <div class="form-terms-wrapper">
+                                <label>
+                                    <input class="checkbox js-terms-checkbox" type="checkbox" checked>
+                                    <span class="checkbox-custom js-checkbox-custom"></span>
+                                    <span class="checkbox-reg-label js-checkbox-label">Регистрируясь, я подтверждаю, что мне уже исполнилось 18 лет. Я принимаю условия пользовательского соглашения, политики конфиденциальности.</span>
+                                </label>
+                            </div>
+                            <div class="button-wrapper">
+                                <button class="buttons button-registration js-btn-reg">Регистрация</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
